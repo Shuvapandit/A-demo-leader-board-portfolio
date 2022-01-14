@@ -3,11 +3,7 @@ body{
     font-family: 'Poppins', sans-serif;
    background-color: #E5E5E5;
 }
-nav{
-    background-color: blue;
- width: 100%;
- height: 30%;
-}
+
 hr{
    border: 1px solid #D1D1D1;
    margin-bottom: 27px;
@@ -130,5 +126,49 @@ height: 127px;
 }
 
 
+/*----------------------------
+media query for mobile device
+------------------------------*/
+@media only screen and (max-width:688px) {
+    .cntnr{
+        width: 100%;
+
+    }
+    .players , .blogs,.courses{
+        
+        grid-template-columns: repeat(1,1fr);
+    }
+    .player{
+        flex-direction: column;
+        align-items: center;
+    }
+        .blog
+        {
+            flex-direction: column;
+        }
+
+    }
+    /*--For tab device-*/
+
+    @media only screen and (min-width:688px) and (max-width:992px) {
+        .cntnr{
+            width: 100%;
+    
+        }
+        .players , .blogs,.courses{
+            
+            grid-template-columns: repeat(2,1fr);
+        }
+        .player{
+            flex-direction: column;
+            align-items: center;
+        }
+            .blog
+            {
+                flex-direction: column;
+            }
+    
+        }
+    
 
  
